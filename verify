@@ -1,0 +1,4 @@
+#!/bin/sh
+# The orchestrator's gate runs exactly this. Keep it fast and complete.
+set -eu
+exec python3 -m unittest discover -q -p 'test_*.py'
